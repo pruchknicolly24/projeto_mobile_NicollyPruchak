@@ -1,40 +1,50 @@
-# Fofoca News 📰✨
+# Welcome to your Expo app 👋
 
-Esse é um app de fofocas desenvolvido com [Expo](https://expo.dev) e [React Native](https://reactnative.dev), criado como projeto para a disciplina de Desenvolvimento Mobile.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Funcionalidades
+## Get started
 
-- Página Inicial com destaques de fofocas.
-- Página Explorar para navegar por conteúdos variados.
-- Aba Bastidores com informações exclusivas.
-- Modo claro e escuro.
-- Navegação entre telas com React Navigation.
-- Armazenamento local com AsyncStorage (ou API, se preferir).
-
-## Como rodar o projeto
-
-1. Instale as dependências:
+1. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Rode o projeto:
+2. Start the app
 
    ```bash
-   npx expo start
+    npx expo start
    ```
 
-   Após rodar o comando, você verá opções para rodar o aplicativo no **Android**, **iOS** ou **Expo Go**.
+In the output, you'll find options to open the app in a
 
-## Imagens do App
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-### Página Inicial
-![Página Inicial](./assets/2025-04-22.png)
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-### Página Explorar
-![Explorar 1](./assets/2025-04-22 (1).png)
-![Explorar 2](./assets/2025-04-22 (2).png)
+## Get a fresh project
 
-### Aba Bastidores
-![Bastidores](./assets/2025-04-22 (3).png)
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
