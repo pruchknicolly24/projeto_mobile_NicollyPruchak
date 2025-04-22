@@ -1,67 +1,65 @@
-# Fofoca News
+# Fofoca News 📱
 
-O **Fofoca News** é um aplicativo de fofocas desenvolvido em React Native utilizando o Expo. O aplicativo permite que os usuários explorem notícias e fofocas do mundo dos famosos e do entretenimento, com uma interface simples e interativa.
+**Fofoca News** é um aplicativo de fofocas desenvolvido com **React Native** e **Expo**. Através dele, você pode explorar notícias, fofocas e bastidores do mundo dos famosos, tudo de uma forma simples, moderna e interativa.
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- **React Native**: Framework para o desenvolvimento de aplicativos móveis.
-- **Expo**: Plataforma que facilita o desenvolvimento e teste de aplicativos React Native.
-- **React Navigation**: Biblioteca para navegação entre telas no aplicativo.
-- **React Context**: Gerenciamento de estado global para o modo claro/escuro.
-- **AsyncStorage**: Armazenamento de dados no dispositivo para persistência de preferências do usuário (como o tema).
+- **React Native**: Framework para o desenvolvimento de aplicativos móveis nativos.
+- **Expo**: Plataforma que facilita o desenvolvimento, testes e deploy do aplicativo.
+- **React Navigation**: Biblioteca para navegação entre as telas do aplicativo.
+- **React Context API**: Gerenciamento global de estado (modo claro/escuro).
+- **AsyncStorage**: Armazenamento local para salvar preferências do usuário, como o tema.
 
-## Instruções de Execução
+## 🔧 Como Rodar o Projeto
 
-1. Clone o repositório para o seu computador:
-
+1. Clone o repositório:
     ```bash
     git clone https://github.com/pruchknicolly24/projeto_mobile_NicollyPruchak.git
     ```
 
-2. Navegue até a pasta do projeto:
-
+2. Acesse a pasta do projeto:
     ```bash
     cd mobile
     ```
 
 3. Instale as dependências:
-
     ```bash
     npm install
     ```
 
-4. Execute o projeto:
-
+4. Inicie o projeto:
     ```bash
     expo start
     ```
 
-5. Escaneie o QR Code com o aplicativo **Expo Go** no seu dispositivo ou execute no emulador.
+5. Escaneie o QR Code com o app **Expo Go** ou rode no emulador para testar no dispositivo.
 
-## Funcionalidades
+## 🌟 Funcionalidades
 
-- **Modo Claro/Escuro**: O aplicativo oferece a opção de alternar entre o modo claro e escuro.
-- **Exploração de Fofocas**: Navegue por diversas notícias e fofocas.
-- **Bastidores**: A aba adicional para acessar fofocas e notícias exclusivas.
+- **Modo Claro/Escuro**: Troque entre os temas claro e escuro com facilidade.
+- **Exploração de Fofocas**: Acesse notícias e fofocas de celebridades.
+- **Bastidores**: Aba exclusiva com notícias e fofocas dos bastidores.
 
-## Prints das Telas
+## 🖼️ Prints do App
 
-### Página Inicial
+### 🏠 Página Inicial
+![Página Inicial](./assets/screenshots/inicial.png)
 
-![Página Inicial](./assets/2025-04-22.png)
+### 🔍 Explorar
 
-### Explorar
+- **Versão 1**:
+  ![Explorar 1](./assets/screenshots/explorar1.png)
 
-#### Versão 1
-![Explorar](./assets/2025-04-22 (1).png)
+- **Versão 2**:
+  ![Explorar 2](./assets/screenshots/explorar2.png)
 
-#### Versão 2
-![Explorar](./assets/2025-04-22 (2).png)
+### 🎬 Bastidores
+![Bastidores](./assets/screenshots/bastidores.png)
 
-### Bastidores
+## 📜 Licença
 
-![Bastidores](./assets/2025-04-22 (3).png)
+Este projeto está licenciado sob a **Licença MIT**. Veja o arquivo LICENSE para mais detalhes.
 
-## Licença
+---
 
-Este projeto é licenciado sob a Licença MIT.
+📝 **Desenvolvido por Nicolly Pruchak** | GitHub: [@pruchknicolly24](https://github.com/pruchknicolly24)
