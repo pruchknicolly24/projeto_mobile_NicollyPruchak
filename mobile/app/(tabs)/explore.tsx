@@ -49,7 +49,7 @@ export default function TabTwoScreen() {
         <ThemedText>
           O novo desafio nas redes sociais parece inofensivo, mas médicos já alertam para os perigos! <ThemedText type="defaultSemiBold">Vários jovens já foram parar no hospital.</ThemedText> A cada segundo, mais e mais pessoas estão caindo na armadilha.{' '}
           <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            O que mais pode acontecer?
+            
           </ThemedText>
         </ThemedText>
         <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
@@ -76,8 +76,8 @@ export default function TabTwoScreen() {
         {Platform.select({
           ios: (
             <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
+               <ThemedText type="defaultSemiBold"></ThemedText>{' '}
+              
             </ThemedText>
           ),
         })}

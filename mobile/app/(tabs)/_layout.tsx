@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router';
 import React, { useState } from 'react';
-import { Platform, View, Text, TouchableOpacity } from 'react-native';
+import { Platform, View, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 import { HapticTab } from '@/components/HapticTab';
 import { IconSymbol } from '@/components/ui/IconSymbol';
@@ -10,29 +11,54 @@ import { Colors } from '@/constants/Colors';
 export default function TabLayout() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Define cores com base no modo atual
   const backgroundColor = isDarkMode ? '#000' : '#fff';
-  const textColor = isDarkMode ? '#fff' : '#000';
-  const borderColor = isDarkMode ? '#fff' : '#333';
+  const iconColor = isDarkMode ? '#fff' : '#000';
+  const borderColor = isDarkMode ? '#fff' : '#000';
 
   return (
     <View style={{ flex: 1, backgroundColor }}>
+      <TouchableOpacity
+        onPress={() => setIsDarkMode(!isDarkMode)}
+        style={{
+          position: 'absolute',
+          top: 8,
+          right: 12,
+          width: 34,
+          height: 34,
+          borderRadius: 17,
+          backgroundColor,
+          justifyContent: 'center',
+          alignItems: 'center',
+          borderWidth: 1,
+          borderColor: borderColor,
+          shadowColor: '#000',
+          shadowOffset: { width: 0, height: 1 },
+          shadowOpacity: 0.1,
+          shadowRadius: 2,
+          elevation: 3,
+          zIndex: 10,
+        }}
+      >
+        <Ionicons
+          name={isDarkMode ? 'sunny' : 'moon'}
+          size={18}
+          color={iconColor}
+        />
+      </TouchableOpacity>
+
       <Tabs
+        key={isDarkMode ? 'dark' : 'light'}
         screenOptions={{
           tabBarActiveTintColor: Colors[isDarkMode ? 'dark' : 'light'].tint,
           headerShown: false,
           tabBarButton: HapticTab,
           tabBarBackground: TabBarBackground,
-          tabBarStyle: Platform.select({
-            ios: {
-              position: 'absolute',
-              backgroundColor,
-            },
-            default: {
-              backgroundColor,
-            },
-          }),
-        }}>
+          tabBarStyle: {
+            backgroundColor,
+            position: 'absolute',
+          },
+        }}
+      >
         <Tabs.Screen
           name="index"
           options={{
@@ -55,39 +81,6 @@ export default function TabLayout() {
           }}
         />
       </Tabs>
-
-      <TouchableOpacity
-        onPress={() => setIsDarkMode(!isDarkMode)}
-        style={{
-          position: 'absolute',
-          top: 10,
-          right: 15,
-          flexDirection: 'row',
-          alignItems: 'center',
-          backgroundColor,
-          paddingVertical: 4,
-          paddingHorizontal: 10,
-          borderRadius: 30,
-          borderWidth: 1,
-          borderColor,
-        }}
-      >
-        <Text style={{
-          color: textColor,
-          fontSize: 12,
-          fontWeight: '600',
-          marginRight: 5,
-        }}>
-          🌗
-        </Text>
-        <Text style={{
-          color: textColor,
-          fontSize: 12,
-          fontWeight: '600',
-        }}>
-          Mudar Tema
-        </Text>
-      </TouchableOpacity>
     </View>
   );
 }
